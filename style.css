@@ -5,6 +5,7 @@
   padding-right: 0;
   font-family: "Poppins", sans-serif;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -214,4 +215,81 @@ section {
   font-size: 0.8em;
   font-weight: 300;
   opacity: 0.5;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.footer .symbols {
+  position: relative;
+  display: flex;
+}
+
+.footer .symbols li {
+  list-style: none;
+}
+.footer .symbols li a {
+  text-decoration: none;
+  margin: 0 20px;
+}
+.footer .symbols li a img {
+  filter: invert(1);
+  max-width: 20px;
+}
+small {
+  color: #666;
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: 200;
+  text-align: center;
+}
+
+.footerNotes a {
+  color: #fff;
+  text-decoration: none;
+}
+
+@media (max-width: 767px) {
+  section {
+    padding: 40px;
+  }
+  .banner .content h2 {
+    font-size: 2.5em;
+  }
+  .banner .content p {
+    font-size: 1em;
+  }
+  .about {
+    flex-direction: column;
+  }
+  .about .contentBx,
+  .about .imgBx {
+    min-width: 50%;
+    width: 50%;
+    text-align: center;
+    padding-right: 0px;
+  }
+  .about .imgBx {
+    min-height: 250px;
+  }
+  .btn {
+    margin-bottom: 30px;
+  }
+  .destination .destinationLists .box {
+    position: relative;
+    max-width: 350px;
+    min-width: initial;
+    width: 350px;
+    height: 400px;
+  }
+  .destination .destinationLists .box .imgBx {
+    height: 320px;
+  }
+  .footer .symbols li a img {
+    filter: invert(1);
+    max-width: 30px;
+  }
 }
