@@ -131,6 +131,7 @@ section {
   width: 50%;
   min-height: 500px;
 }
+.banner2,
 .banner3 {
   position: relative;
   width: 100%;
@@ -140,6 +141,7 @@ section {
   align-items: center;
 }
 
+.banner2:before,
 .banner3:before {
   content: "";
   position: absolute;
@@ -150,6 +152,7 @@ section {
   z-index: 1;
   background: linear-gradient(to top, #111, transparent);
 }
+.banner2:after,
 .banner3:after {
   content: "";
   position: absolute;
@@ -158,5 +161,57 @@ section {
   width: 100%;
   height: 400px;
   z-index: 1;
-  background: linear-gradient(to top, #111, transparent);
+  background: linear-gradient(to bottom, #111, transparent);
+}
+
+.destination {
+  text-align: center;
+}
+.destination .content {
+  text-align: center;
+}
+.destination .destinationLists {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
+.destination .destinationLists .box {
+  position: relative;
+  min-width: 350px;
+  height: 480px;
+  background: #191919;
+  transition: 0.5s;
+  margin: 10px;
+}
+.destination .destinationLists:hover .box {
+  opacity: 0.2;
+}
+.destination .destinationLists .box:hover {
+  opacity: 1;
+}
+.destination .destinationLists .box .imgBx {
+  position: relative;
+  width: 100%;
+  height: 400px;
+}
+
+.destination .destinationLists .box .content {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.destination .destinationLists .box .content h2 {
+  color: #fff;
+  font-weight: 500;
+  line-height: 1.2em;
+}
+.destination .destinationLists .box .content h2 span {
+  font-size: 0.8em;
+  font-weight: 300;
+  opacity: 0.5;
 }
